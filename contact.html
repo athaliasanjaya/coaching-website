@@ -10,10 +10,11 @@
 <body>
 
   <!-- NAVBAR -->
-  <header>
-    <nav>
-      <h1>Coaching</h1>
-      <ul>
+  <header class="site-header">
+    <nav class="navbar">
+      <h1 class="logo">Coaching</h1>
+
+      <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Layanan</a></li>
         <li><a href="contact.html">Kontak</a></li>
@@ -22,48 +23,47 @@
   </header>
 
   <!-- MAIN CONTENT -->
-  <main>
+  <main class="main-content">
 
     <!-- PAGE TITLE -->
-    <section>
-      <h2>Hubungi Saya</h2>
-      <p>
+    <section class="page-header">
+      <h2 class="page-title">Hubungi Saya</h2>
+      <p class="page-description">
         Jika Anda tertarik untuk mengenal coaching lebih jauh,
         silakan hubungi saya melalui salah satu cara di bawah ini.
       </p>
     </section>
 
     <!-- CONTACT INFO -->
-    <section>
-      <h3>Kontak</h3>
-      <p>Email: contoh@email.com</p>
-      <p>WhatsApp: 08xxxxxxxxxx</p>
+    <section class="contact-info">
+      <h3 class="section-title">Kontak</h3>
+      <p class="section-text">Email: contoh@email.com</p>
+      <p class="section-text">WhatsApp: 08xxxxxxxxxx</p>
     </section>
 
     <!-- CONTACT FORM (OPTIONAL) -->
-    <section>
-      <h3>Kirim Pesan</h3>
-      <form>
-        <label>
-          Nama:<br />
-          <input type="text" name="name" />
-        </label>
-        <br /><br />
+    <section class="contatc-form">
+      <h3 class="section-title">Kirim Pesan</h3>
 
-        <label>
-          Pesan:<br />
-          <textarea name="message" rows="4"></textarea>
-        </label>
-        <br /><br />
+      <form class="form">
+        <div class="form-group">
+          <label for="name">Nama</label><br />
+          <input type="text" id="name" name="name" />
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Nama</label><br />
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
 
-        <button type="submit">Kirim</button>
+        <button type="submit" class="btn-primary">Kirim</button>
       </form>
     </section>
 
   </main>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="site-footer">
     <p>&copy; 2025 Coaching Website</p>
   </footer>
 
