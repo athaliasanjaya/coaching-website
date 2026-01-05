@@ -6,62 +6,782 @@
   <title>Coaching Website</title>
 
   <!-- CSS -->
+   <!-- Google Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <header class="site-header">
-    <nav class="navbar">
-      <h1 class="logo">Coaching</h1>
+    <header class="site-header">
+        <nav class="navbar">
+            <h1 class="logo">Coach.ing</h1>
 
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Layanan</a></li>
-        <li><a href="contact.html">Kontak</a></li>
-      </ul>
-    </nav>
-  </header>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#coaching-intro" class="nav-link">Intro</a></li>
+                <li><a href="#topic" class="nav-link">Topic</a></li>
+                <li><a href="#service" class="nav-link">Services</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#testi" class="nav-link">Review</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Contact me</a>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
   <!-- MAIN CONTENT -->
   <main class="main-content">
 
     <!-- HERO SECTION -->
-    <section class="hero">
-      <h2 class="hero-title">Temukan Kejelasan dan Arah Hidup Anda</h2>
-      <p class="hero-description">
-        Coaching untuk membantu Anda memahami diri sendiri,
-        membuat keputusan dengan lebih sadar, dan melangkah dengan percaya diri.
-      </p>
-      <a href="contact.html" class="btn-primary">Hubungi Saya</a>
+    <section id="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Helping You <span class= "highlight-text">Grow</span> From Within</h2>
+
+            <p class="hero-description">
+                A coaching experience that helps you clarify your goals, explore the challenges you encounter, and 
+                determine the most effective steps to take in navigating your personal and professional journey.
+            </p>
+            <div class="button-group">
+                <a href="services.html" class="btn-primary">Our Services</a>
+                <a href="#about-preview" class="btn-secondary">See More</a>
+            </div>
+        </div>
+
+        <!-- <div class="hero-images">
+            <img src="assets/images/image1.jpg" class="hero-picture" />
+
+            
+        </div>
+
+        <div class="hero-decoration">
+                <img src="assets/icons/bell-icon.png" class="big-icon"/>
+
+                <div>
+                    <p class="hero-decoration-title">Update</p>
+                    <p class="hero-decoration-text">"Hey, i'd like to book a session!"</p>
+               </div>
+                
+        </div> -->
     </section>
 
+    <!-- IMAGES -->
+
+
+    <!-- BANNER -->
+    <section class="hero-transition">
+        <p class="hero-transition-text">gennevieve_clr@gmail.com</p>
+        <p class="hero-transition-text">Bali, Indonesia</p>
+    </section>
+
+
+    <!-- MINI CTA -->
+    <!-- <section class="mini-cta">
+        <h3 class="mini-cta-title">
+        Ingin mulai mengenal diri dan tujuan Anda?
+        </h3> 
+        
+        <p classs="mini-cta-text">
+            Anda tidak harus tahu semua jawabannya sekarang. 
+            Coaching membantu Anda menemukan arah melalui percakapan yang aman dan terarah
+        </p>
+
+        <a href="contact.html" class="btn-primary">
+            Hubungi Saya
+        </a>
+    </section> -->
+
+
     <!-- ABOUT SHORT -->
-    <section class="about-preview">
-      <h3 class="section-title">Tentang Coach</h3>
-      <p class="section-text">
-        Saya adalah seorang coach yang mendampingi individu untuk
-        mengeksplorasi potensi, nilai, dan arah hidup melalui proses coaching
-        yang reflektif dan personal.
-      </p>
+
+    <section id="about">
+        <div class="about-container-left">
+            <!-- LEFT: PHOTO -->
+            <div class="about-photo">
+                <img src="/assets/images/coach-profile3.jpg" alt="Foto Coach" />
+            </div>
+
+            <!-- RIGHT: TEXT --> 
+            <div class="about-text">
+                <p class="section-name">ABOUT COACH</p>
+                <h1 class="section-title">Genevieve Clairmont</h1>
+
+                <p class="section-text">
+                    Saya mendampingi individu dalam mengenali potensi, nilai, dan arah hidup melalui coaching yang reflektif dan personal.
+                </p>
+            
+                <div class="about-certification">
+                    <div class="certification-list">
+                        <div class="certification-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#4CAF50"/>
+                            </svg>
+                            <p class="certification-name">International Coaching Academy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="about-container-right">
+            <div class="card-stats">
+                <p class="section-title">2018<span> est.</span></p>
+                <p class="card-text">Experienced in 7 years of coaching</p>
+            </div>
+
+            <div class="card-stats">
+                <p class="section-title">93<span> %</span></p>
+                <p class="card-text">Client satisfaction is always the top priority</p>
+            </div>
+
+            <div class="card-stats">
+                <p class="section-title">8<span> hr</span></p>
+                <p class="card-text">Operational of 8 hours in a day to serve the best service for our beloved client</p>
+            </div>
+        </div>
     </section>
 
     <!-- WHAT IS COACHING -->
-    <section class="coaching-intro">
-      <h3 class="section-title">Apa Itu Coaching?</h3>
-      <p class="section-text">
-        Coaching adalah proses percakapan terstruktur yang membantu Anda
-        menemukan kejelasan, kesadaran diri, dan langkah ke depan yang selaras
-        dengan diri Anda.
-      </p>
+
+
+    <section id="coaching-intro">
+        <div class="coaching-intro-right">
+            <p class="section-name">
+                INTRO
+            </p>
+            <h1 class="section-title">Feel in control, give peace of mind</h1>
+            <p class="section-text">
+                Coaching is a structured conversation that helps you find clarity, self-awareness, and a path forward that aligns with who you are.
+            </p>
+
+            <div class="list-container">
+                <div class="list-item">
+                    <img src="assets/icons/certification-icon.png" class="bulleted-points"/>
+                    <div>
+                        <p class="section-text-bold">
+                            A friend for brainstorming
+                        </p>
+                        <p class="section-text-small">
+                            Where you can share things that makes your mind heavy
+                        </p>
+                    </div>
+                </div>
+
+                <div class="list-item">
+                    <img src="assets/icons/certification-icon.png" class="bulleted-points"/>
+                    <div>
+                        <p class="section-text-bold">
+                            Earn confidence for your problem
+                        </p>
+                        <p class="section-text-small">
+                            To be able to solve your problem, you need confidence
+                        </p>
+                    </div>
+                </div>
+
+                <div class="list-item">
+                    <img src="assets/icons/certification-icon.png" class="bulleted-points"/>
+                    <div>
+                        <p class="section-text-bold">
+                            Find and become the better you
+                        </p>
+                        <p class="section-text-small">
+                            With finding yourself, you know more about how to deal with your own problem
+                        </p>
+                    </div>   
+                </div>
+                <a href="#" class="learn-more">
+                    Learn More 
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="coaching-intro-left">
+            <img src="assets/images/intro-image.jpg" class="coaching-intro-image"/>
+        </div>
+    </section>
+
+    <section id="topic">
+        <div class="topic-upper">
+            <p class="section-name">
+                TOPIC
+            </p>
+            <div class="text">
+                <h1 class="section-title">You decide the topic, we guide the mind</h1>
+                <p class="section-text">
+                    Feel the experience of having a friend to clear up your mind and guide your life decision
+                </p>
+            </div>   
+        </div>
+
+        <div class="topic-under">
+            <div class="topic-under-left">
+                <h1 class="section-title">
+                    Coaching isn't about telling you what to do, it's to help you do it yourself
+                </h1>
+                <p class="section-text">
+                    These are the top topics clients bring to a session
+                </p>
+                <img src="/assets/images/plant1.png" class="plant"/>
+            </div>
+
+            <div class="card-container">
+                <div class="card-topic">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="job-icon"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                    <p class="card-title">
+                        Job
+                    </p>
+                    <p class="card-text">
+                        A clearer understanding of your <span>goals, priorities, and direction</span> to move forward with intention
+                    </p>
+                </div>
+                <div class="card-topic">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
+                    <p class="card-title">
+                        Love
+                    </p>
+                    <p class="card-text">
+                        Deepens your awareness of your <span>values, patterns, and inner motivations</span>.
+                    </p>
+                </div>
+                <div class="card-topic">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compass-icon"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/><circle cx="12" cy="12" r="10"/></svg>
+                    <p class="card-title">
+                        Decision
+                    </p>
+                    <p class="card-text">
+                        Building <span>self-trust and confidence </span>to make decisions aligned with who you truly are.
+                    </p>
+                </div>
+                <div class="card-topic">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="globe-icon"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                    <p class="card-title">
+                        Other  
+                    </p>
+                    <p class="card-text">
+                        Building <span>self-trust and confidence </span>to make decisions aligned with who you truly are.
+                    </p>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+
+    <section id="service">
+        <div class="service-upper">
+            <div class="text">
+                <p class="section-name">SERVICES</p>
+                <h1 class="hero-title">
+                    Your Wellness, Your Plan
+                    <!-- <span>Explore Sessions</span> -->
+                </h1>
+                <p class="section-text">
+                    To best fit your preference and needs, there are plans for your consideration.
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="service-under">
+            <div class="card-container">
+                <div class="card-service">
+                    <div>
+                        <p class="section-name">
+                            SESSION
+                        </p> 
+                    </div>
+                    
+                    <div class="card-label">
+                        <h2 class="card-title">
+                            Discovery
+                        </h2>
+                        <div class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-timer-icon lucide-timer"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg>
+                            <p class="duration">30 Min</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <p class="card-text">
+                        A gentle introductory session to explore your goals, challenges, and whether coaching feels right for you.
+                    </p>
+                    <a href="" class="btn-primary">Book a Session</a>
+                    <div class="card-detail">
+                        <!-- <p class="detail-title">Duration</p>
+                        <div class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-timer-icon lucide-timer"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg>
+                            <p>30 Minutes</p>
+                        </div> -->
+                        
+
+                        <p class="detail-title">Best For</p>
+                        <div class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <p>A first-time clients</p>
+                        </div>
+                        <div class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <p>Curious about coaching</p>
+                        </div>
+                        <div class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <p>Want to explore goals</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card-service highlight">
+                    <span class="recommended-badge">Recommended</span> 
+                    <div>
+                        <p class="section-name">
+                            SESSION
+                        </p> 
+                    </div>
+                    
+                    <div class="card-label">
+                        <h2 class="card-title">
+                            Single
+                        </h2>
+                        <div class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-timer-icon lucide-timer"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg>
+                            <p class="duration">60-90 Min</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <p class="card-text">
+                        A focused coaching session to gain clarity on a specific situation, decision, or challenge.
+                    </p>
+                    <a href="" class="btn-primary">Book a Session</a>
+                    <div class="card-detail">
+
+                        <p class="detail-title">Best For</p>
+                        <div class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <p>One clear challenge</p>
+                        </div>
+                        <div class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <p>Feeling stuck</p>
+                        </div>
+                        <div class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <p>Need fresh clarity</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card-service">
+                    <div>
+                        <p class="section-name">
+                            SESSION
+                        </p> 
+                    </div>
+                    
+                    <div class="card-label">
+                        <h2 class="card-title">
+                            Ongoing 1 : 1
+                        </h2>
+                        <div class="list-item">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-timer-icon lucide-timer"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg> -->
+                            <p class="duration">Weekly</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <p class="card-text">
+                        A deeper coaching journey designed to support continuous growth, reflection, and aligned action.
+                    </p>
+                    <a href="" class="btn-primary">Book a Session</a>
+                    <div class="card-detail">
+
+                        <p class="detail-title">Best For</p>
+                        <div class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <p>Long-term growth</p>
+                        </div>
+                        <div class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <p>Life or career change</p>
+                        </div>
+                        <div class="list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            <p>Ongoing support</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="faq-left">
+            <div class="faq-header">
+                <h1 class="hero-title">Any questions? We got you.</h1>
+                <p class="section-text">People tend to have a lot of questions about coaching sessions. Especially if they are a first-timer. Dont worry! we have sum it up for you.</p>
+            </div>
+
+
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <h3>What is coaching?</h3>
+                        <span class="faq-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Coaching is a supportive process that helps you gain clarity, self-awareness, and direction through guided reflection and conversation.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need to prepare before a session?</h3>
+                        <span class="faq-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            No preparation is required. You can simply come as you are and we will explore what feels most important.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is coaching confidential?</h3>
+                        <span class="faq-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes, all coaching sessions are private and handled with care and confidentiality.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How many sessions do I need?</h3>
+                        <span class="faq-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            The number of sessions depends on your goals, with some people gaining clarity in one session and others choosing ongoing support.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="faq-right">
+            <div class="faq-right-upper">
+                <h1 class="section-title">
+                    Coaching isn't about telling you <br>what to do. It's about helping <br>you do it yourself.
+                </h1>
+                <p class="section-text">
+                    These are the top topics clients bring to a session
+                </p>
+                <img src="/assets/images/plant2.png" class="plant"/>
+            </div>
+
+            <div class="faq-right-under">
+
+                    <div class="faq-text">
+                        <p class="section-text">
+                            Read about why coaching is one of the reccomended options given from experts to solve your confusion in problems or decisions.
+                        </p>
+                        <a href="#" class="learn-more">
+                        Read articles
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-right-icon lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+                        </a>
+                    </div>
+                    
+                    <h1 class="section-title">Don't you corious, what do experts say about coaching?<br>Try read these!</h1>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="testi">
+        <div class="testi-header">
+            <p class="section-name">TESTIMONIALS</p>
+            <div class="testi-header-content">
+                <h1 class="hero-title">Don't just take our word for it...</h1>
+                <p class="section-text">
+                    Our clients have various experience with coaching sessions. What we can see is that they're all satisfied. You can join and share your experience with others too! We always desire for feedback from clients
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="testi-card-container">
+            <div class="testi-card-wrapper">
+                <div class="testi-card">
+                    <p class="quote-icon">❝</p>
+                    <p class="testi-text">
+                        Legally Always has been an invaluable partner in navigating the complexities of business law.
+                    </p>
+                    <div class="testi-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <div class="author-name">Jane Doe</div>
+                            <div class="author-position">CEO, TechStart Inc.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card blur">
+                    <p class="quote-icon">❝</p>
+                    <p class="testi-text">
+                        Their expertise in corporate law helped us secure crucial partnerships.
+                    </p>
+                    <div class="testi-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <div class="author-name">John Smith</div>
+                            <div class="author-position">Founder, StartupCo</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card blur">
+                    <p class="quote-icon">❝</p>
+                    <p class="testi-text">
+                        Professional, responsive, and always available when we needed them.
+                    </p>
+                    <div class="testi-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <div class="author-name">Mary Johnson</div>
+                            <div class="author-position">Director, Tech Solutions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <button class="nav-btn back-btn" id="backBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m15 18-6-6 6-6"/>
+                    </svg>
+                </button>
+
+                <!-- Next Button -->
+                <button class="nav-btn next-btn" id="nextBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m9 18 6-6-6-6"/>
+                    </svg>
+                </button>
+            
+           
+            
+        </div>
+    </section>
+
+    <section id="contact">
+
+        <div class="contact-title">
+            <p class="section-name">CONTACT</p>
+            <h1 class="hero-title">Contact us</h1>
+            <p class="section-text">We have several channels you can choose with your own comfort to contact. Feel free and be kind</p>
+        </div>
+        <div class="contact-form">
+            <div class="contact-header">
+                <h1 class="section-title">
+                    Discuss Your Need With Coach!
+                </h1>
+                <p class="section-text">
+                    Do you have questions about anything relating to coaching? Don't hesitate to ask! Leave a message and we will reach you out
+                </p>
+    
+                <div class="contact-item-container">
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                        <div class="contact-detail">
+                            <p class="section-text">E-mail</p>
+                            <p class="contact-address">gennevieve_clr@gmail.com</p>
+                        </div>
+                    </div>
+    
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                        <div class="contact-detail">
+                            <p class="section-text">Phone Number</p>
+                            <p class="contact-address">+62 8100 **** ****</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media-container">
+                    <p>Others</p>
+                    <div class="social-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-media-icon"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-media-icon"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-media-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </div>
+                </div>
+    
+            </div>
+            
+    
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Jane Smith">
+                </div>
+                <div class="identity-form">
+            
+                    <div class="form-group">
+                        <label for="industry">Industry</label>
+                        <select id="industry">
+                            <option>Select...</option>
+                            <option>Technology</option>
+                            <option>Healthcare</option>
+                            <option>Finance</option>
+                            <option>Manufacturing</option>
+                            <option>Retail</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                                <label for="name">Telephone</label>
+                                <input type="text" id="name" placeholder="+62813********">
+                    </div>
+
+                </div>
+            
+    
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Type your message..."></textarea>
+            </div>
+    
+            <button type="submit" class="submit-btn">
+                <span class="btn-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </span>
+                <span>Send</span>
+            </button>
+            </div>
+
+
+        </div>
+
     </section>
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>&copy; 2025 Coaching Website</p>
-  </footer>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">Coaching</div>
+                    <p class="footer-description">
+                        Empowering individuals and organizations to reach their full potential through personalized coaching solutions.
+                    </p>
+                </div>
 
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#coaching">Coaching</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Coaching. All rights reserved.
+                </p>
+
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>
