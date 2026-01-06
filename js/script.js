@@ -8,7 +8,6 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Close menu when clicking on a link
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -16,7 +15,6 @@ navLinks.forEach(link => {
     });
 });
 
-// Close menu when clicking outside
 document.addEventListener('click', (e) => {
     if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
         hamburger.classList.remove('active');
@@ -24,23 +22,19 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Active link on scroll
 window.addEventListener('scroll', () => {
     let current = '';
-    const scrollOffset = 300; // sesuaikan dengan scroll-padding-top + buffer
+    const scrollOffset = 300; 
     
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
         
-        // Cek apakah section sedang di viewport
-        // Gunakan offset yang lebih besar untuk match dengan scroll-padding
         if (window.pageYOffset >= (sectionTop - scrollOffset)) {
             current = section.getAttribute('id');
         }
     });
 
-    // Update active class
     navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
@@ -55,12 +49,10 @@ faqQuestions.forEach(question => {
         const faqItem = question.parentElement;
         const isActive = faqItem.classList.contains('active');
 
-        // Tutup semua item lain
         document.querySelectorAll('.faq-item').forEach(item => {
             item.classList.remove('active');
         });
 
-        // Toggle item yang diklik
         if (!isActive) {
             faqItem.classList.add('active');
         }
@@ -71,7 +63,7 @@ let currentIndex = 0;
 const cards = document.querySelectorAll('.testi-card');
 const nextBtn = document.getElementById('nextBtn');
 const backBtn = document.getElementById('backBtn');
-const cardWidth = 520; // 500px card + 20px gap
+const cardWidth = 520;
 
 
 function updateCards() {
@@ -90,7 +82,6 @@ function updateCards() {
     updateButtons();
 }
 
-// Next button
 nextBtn.addEventListener('click', () => {
     if (currentIndex < cards.length - 1) {
         currentIndex++;
@@ -98,7 +89,6 @@ nextBtn.addEventListener('click', () => {
     }
 });
 
-// Back button
 backBtn.addEventListener('click', () => {
     if (currentIndex > 0) {
         currentIndex--;
@@ -106,5 +96,4 @@ backBtn.addEventListener('click', () => {
     }
 });
 
-// Initialize
 updateButtons();
